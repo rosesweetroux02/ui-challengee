@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            scroll-behavior: smooth;
+}
+        
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 25%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+        
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+    padding-left: 100px;
+}
+
+.navlist a:hover{
+    color: #fff;
+}
+
+        section{
+            padding: 30px 12%;
+        }
+
+        .contact{
+            background: plum;
+            height: auto;
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            align-items: center;
+            grid-gap: 6rem;
+        }
+
+        .contact-form h1{
+            font-size: 80p;
+            color: black;
+            margin-bottom: 20px;
+        }
+        
+        span{
+            color: purple;
+        }
+
+        .contact-form p{
+            color: darkblue;
+            line-height: 23px;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form form{
+            position: relative;
+        }
+
+        .contact-form form input, form textarea{
+            width: 100%;
+            padding: 17px;
+            border: none;
+            outline: none;
+            background: white;
+            color: black;
+            font-size: 1.1rem;
+            margin-bottom: 0.7rem;
+            border-radius: 10px;
+        }
+
+        .contact-form textarea{
+            resize: none;
+            height: 200px;
+        }
+
+        .contact-form form .btn{
+            display: inline-block;
+            background: white;
+            color: black;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            width: 220px;
+            cursor: pointer;
+        }
+
+        .contact-form form .btn:hover{
+            border: 2px solid plum;
+            background: transparent;
+            transform: scale(1.1);
+        }
+
+    </style>
+    <body>
+           
+        <header>
+            <nav>
+            <ul class="navlist">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            </ul>
+        </nav>
+   </header>
+        <section class="contact">
+            <div class="contact-form">
+                <h1>Contact<span> Us</span></h1>
+                <p>I am available for freelance work. Connect with me via <br>phone : 0792174900
+                    or <br>email : rosetebogondhlovu@gmail.com
+                </p>
+                <form action="https://formspree.io/f/mayzoeey" method="POST">
+                    <input type="" name="Your Name" placeholder="Enter your name" required>
+                    <input type="email" name="email" id="" placeholder="Enter your e-mail" required>
+                    <input type="" placeholder="Write a subject" required>
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required>
+                    </textarea>
+                    <input type="submit" name="" value="submit" class="btn">
+                </form>
+            </div>
+            <div class="contact-img">
+                <img src="C:\Users\Rose Tebogo Ndhlovu\Documents\GitHub\ui-challengee\Assets\Images\n.png">
+    
+            </div>
+        </section>
+        
+
+    </body>
+</html>
